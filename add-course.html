@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>S Finder Admin</title>
+</head>
+
+<body>
+  <main class="main-wrapper">
+    <div class="left-sidebar">
+      <div class="logo">
+        <img src="images/logo.png" alt="">
+      </div>
+
+      <nav class="admin-main-menu">
+        <ul>
+          <li>
+            <a href="user.html"><img src="images/icon/users-icon.png" alt="">User List</a>
+          </li>
+          <li>
+            <a href="banners.html"><img src="images/icon/banner-icon.png" alt="">Banners</a>
+          </li>
+          <li>
+            <a href="notification.html"><img src="images/icon/notification-icon.png" alt="">Notification</a>
+          </li>
+          <li>
+            <a href="settings.html"><img src="images/icon/settings-icon.png" alt="">Settings</a>
+          </li>
+          <li>
+            <a href="notice.html"><img src="images/icon/notification-icon.png" alt="">Notice</a>
+          </li>
+          <li>
+            <a href="message.html"><img src="images/icon/message-icon.png" alt="">Message</a>
+          </li>
+          <li>
+            <a href="daily-update.html"><img src="images/icon/daily-update-icon.png" alt="">Daily Update</a>
+          </li>
+          <li>
+            <a href="file-request.html"><img src="images/icon/banner-icon.png" alt="">File Request</a>
+          </li>
+          <li>
+            <a href="ic.html"><img src="images/icon/ic-icon.png" alt="">IC</a>
+          </li>
+          <li>
+            <a href="buy-sell.html"><img src="images/icon/buy-sell-icon.png" alt="">Buy & Sell</a>
+          </li>
+          <li>
+            <a href="shop-product.html"><img src="images/icon/buy-sell-icon.png" alt="">Shop</a>
+          </li>
+          <li>
+            <a href="order.html"><img src="images/icon/order-icon.png" alt="">Orders</a>
+          </li>
+          <li>
+            <a href="freelancer.html"><img src="images/icon/freelancer-icon.png" alt="">Freelancer List</a>
+          </li>
+          <li class="active">
+            <a href="course.html"><img src="images/icon/course-icon.png" alt="">Course</a>
+          </li>
+          <li>
+            <a href="course-category.html"><img src="images/icon/course-icon.png" alt="">Course Category</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <section class="main-content">
+      <div class="main-content-header">
+        <div class="main-content-header-top">
+          <div class="admin-info">
+            <img src="images/admin-user-image.png" alt="">
+            <h6>Admin</h6>
+          </div>
+          <a href="add-course.html" class="logout-btn">Logout</a>
+        </div>
+        <div class="main-content-header-bottom">
+          <h4>Add Course</h4>
+        </div>
+      </div>
+      <div class="user-content py-5">
+        <form>
+          <div class="add-course">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="add-notification-form-item">
+                  <label for="" class="form-label">Course Name</label>
+                  <input type="text" class="form-control" placeholder="Course Name">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="add-notification-form-item">
+                  <label for="" class="form-label">Course Category</label>
+                  <select class="form-select">
+                    <option selected>Select Category</option>
+                    <option value="1">Mobile Servicing Hardware Course</option>
+                    <option value="2">Software Course</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="add-notification-form-item">
+                  <label for="" class="form-label">Course Price</label>
+                  <input type="text" class="form-control" placeholder="Course Price">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="add-notification-form-item">
+                  <label for="" class="form-label">Course Instructor</label>
+                  <select class="form-select">
+                    <option selected>Select Instructor</option>
+                    <option value="1">Md. Soykot Hosen</option>
+                    <option value="2">Khaleed Saifullah</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="add-notification-form-item">
+                  <label for="" class="form-label">Course Cover Photo</label>
+                  <div class="custom-file-upload mb-5">
+                    <div class="custom-file-upload-box">
+                      <i class="bi bi-plus-circle"></i>
+                      <h6>Click here to upload File</h6>
+                    </div>
+                    <input type="file">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="add-notification-form-item">
+                  <label for="" class="form-label">Course Description</label>
+                  <textarea class="form-control" name="" id="" rows="5" placeholder="Course Description"></textarea>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="add-notification-form-item">
+                  <label for="" class="form-label">Course Enrollment</label>
+                  <input type="number" class="form-control" placeholder="Course Enrollment">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="add-notification-form-item">
+                  <label for="" class="form-label">Course Time</label>
+                  <input type="text" class="form-control" placeholder="Course Time">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="add-notification-form-item">
+                  <label for="" class="form-label">Total Video</label>
+                  <input type="number" class="form-control" placeholder="Course Total Video">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="add-notification-form-item">
+                  <label for="" class="form-label">Total Pdf</label>
+                  <input type="number" class="form-control" placeholder="Course Total Pdf">
+                </div>
+              </div>
+            </div>
+            <div class="add-course-benefit">
+              <div class="add-course-benefit-header">
+                <h4>Course Benefits</h4>
+                <span class="btn btn-primary" onclick="addCourseBenefit()"><i class="bi bi-plus-lg"></i></span>
+              </div>
+              <div class="add-course-benefit-item">
+                <input type="text" class="form-control mb-1" placeholder="Course Benefit">
+              </div>
+            </div>
+            <div class="add-course-material">
+              <div class="add-course-material-header">
+                <h4>Course Materials</h4>
+              </div>
+              <div class="add-course-material-lists">
+                <div class="add-course-material-item">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="add-notification-form-item">
+                        <label for="" class="form-label">Material Name</label>
+                        <input type="text" class="form-control" placeholder="Material Name">
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="add-notification-form-item">
+                        <label for="" class="form-label">Material Type</label>
+                        <select class="form-select">
+                          <option selected>Select Type</option>
+                          <option value="1">Video</option>
+                          <option value="2">Pdf</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="add-notification-form-item">
+                        <label for="" class="form-label">Material Access</label>
+                        <select class="form-select">
+                          <option selected>Select Access</option>
+                          <option value="1">Free</option>
+                          <option value="2">Paid</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="add-notification-form-item">
+                        <label for="" class="form-label">Material Serial</label>
+                        <input type="number" class="form-control" placeholder="Material Serial">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="add-notification-form-item">
+                        <label for="" class="form-label">Material File</label>
+                        <div class="custom-file-upload mb-5">
+                          <div class="custom-file-upload-box">
+                            <i class="bi bi-plus-circle"></i>
+                            <h6>Click here to upload file</h6>
+                          </div>
+                          <input type="file">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Add</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>S Finder Admin</title>
+</head>
+
+<body>
+  <main class="main-wrapper">
+    <div class="left-sidebar">
+      <div class="logo">
+        <img src="images/logo.png" alt="">
+      </div>
+
+      <nav class="admin-main-menu">
+        <ul>
+          <li>
+            <a href="user.html"><img src="images/icon/users-icon.png" alt="">User List</a>
+          </li>
+          <li class="active">
+            <a href="banners.html"><img src="images/icon/banner-icon.png" alt="">Banners</a>
+          </li>
+          <li>
+            <a href="notification.html"><img src="images/icon/notification-icon.png" alt="">Notification</a>
+          </li>
+          <li>
+            <a href="settings.html"><img src="images/icon/settings-icon.png" alt="">Settings</a>
+          </li>
+          <li>
+            <a href="notice.html"><img src="images/icon/notification-icon.png" alt="">Notice</a>
+          </li>
+          <li>
+            <a href="message.html"><img src="images/icon/message-icon.png" alt="">Message</a>
+          </li>
+          <li>
+            <a href="daily-update.html"><img src="images/icon/daily-update-icon.png" alt="">Daily Update</a>
+          </li>
+          <li>
+            <a href="file-request.html"><img src="images/icon/banner-icon.png" alt="">File Request</a>
+          </li>
+          <li>
+            <a href="ic.html"><img src=" images/icon/ic-icon.png" alt="">IC</a>
+          </li>
+          <li>
+            <a href="buy-sell.html"><img src="images/icon/buy-sell-icon.png" alt="">Buy & Sell</a>
+          </li>
+          <li>
+            <a href="shop-product.html"><img src="images/icon/buy-sell-icon.png" alt="">Shop</a>
+          </li>
+          <li>
+            <a href="order.html"><img src="images/icon/order-icon.png" alt="">Orders</a>
+          </li>
+          <li>
+            <a href="freelancer.html"><img src="images/icon/freelancer-icon.png" alt="">Freelancer List</a>
+          </li>
+          <li>
+            <a href="course.html"><img src="images/icon/course-icon.png" alt="">Course</a>
+          </li>
+          <li>
+            <a href="course-category.html"><img src="images/icon/course-icon.png" alt="">Course Category</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <section class="main-content">
+      <div class="main-content-header">
+        <div class="main-content-header-top">
+          <div class="admin-info">
+            <img src="images/admin-user-image.png" alt="">
+            <h6>Admin</h6>
+          </div>
+          <a href="#" class="logout-btn">Logout</a>
+        </div>
+        <div class="main-content-header-bottom">
+          <h4>Banners</h4>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addBanner"><i
+              class="bi bi-plus me-2"></i>Add Banner</button>
+        </div>
+        <div class="modal fade" id="addBanner" tabindex="-1" aria-labelledby="addBannerLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Add Banner</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h6 class="text-danger mb-4">Warning: Banner Photo must be 350px width and 150px height</h6>
+                <div class="add-banner-form">
+                  <h5 class="mb-4">Image</h5>
+                  <form>
+                    <div class="custom-file-upload mb-5">
+                      <div class="custom-file-upload-box">
+                        <i class="bi bi-plus-circle"></i>
+                        <h6>Click here to upload File</h6>
+                      </div>
+                      <input type="file">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add</button>
+                  </form>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="user-content py-5">
+        <div class="banner-table">
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Serial No</th>
+                  <th scope="col">Banner Image</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>
+                    <div class="banner-image">
+                      <img src="images/banner-image.png" alt="">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="table-action-btn">
+                      <a href="#">
+                        <i class="bi bi-pencil-fill"></i>
+                      </a>
+                      <a href="#">
+                        <i class="bi bi-trash-fill"></i>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>
+                    <div class="banner-image">
+                      <img src="images/banner-image.png" alt="">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="table-action-btn">
+                      <a href="#">
+                        <i class="bi bi-pencil-fill"></i>
+                      </a>
+                      <a href="#">
+                        <i class="bi bi-trash-fill"></i>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>
+                    <div class="banner-image">
+                      <img src="images/banner-image.png" alt="">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="table-action-btn">
+                      <a href="#">
+                        <i class="bi bi-pencil-fill"></i>
+                      </a>
+                      <a href="#">
+                        <i class="bi bi-trash-fill"></i>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
