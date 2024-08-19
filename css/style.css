@@ -31,6 +31,16 @@ body {
   color: var(--primary-color) !important;
 }
 
+.mobile-menu-icon {
+  border: 1px solid #f33400;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #f33400;
+  display: none;
+  position: relative;
+  z-index: 99999999;
+}
+
 /* ====== Login Page ======== */
 
 .login-wrapper {
@@ -163,6 +173,24 @@ body {
 .left-sidebar {
   padding: 30px;
   width: 360px;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.left-sidebar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.left-sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.left-sidebar::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.left-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .admin-main-menu ul {
@@ -453,6 +481,7 @@ body {
   text-align: center;
   padding: 20px 10px;
   border-radius: 5px;
+  height: 100%;
 }
 
 .course-info-item img {
@@ -536,4 +565,34 @@ body {
   box-shadow: 0 0 3px 1px #dbdbdb;
   border-radius: 5px;
   padding: 10px;
+}
+
+/* ====================
+   Responsive Design
+======================= */
+
+@media only screen and (max-width: 1024px) {
+  .left-sidebar {
+    display: none;
+  }
+  .left-sidebar.open {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #ccc;
+    z-index: 999;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  .mobile-menu-icon {
+    display: inline-block;
+  }
+
+  .main-wrapper {
+    position: relative;
+  }
 }
