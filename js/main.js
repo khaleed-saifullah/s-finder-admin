@@ -1,6 +1,10 @@
 $(document).ready(function () {
   $(".mobile-menu-icon").click(function () {
-    $(".left-sidebar").toggleClass("open");
+    $(".left-sidebar").addClass("open");
+  });
+
+  $(".sidebar-close-icon").click(function () {
+    $(".left-sidebar").removeClass("open");
   });
 });
 
